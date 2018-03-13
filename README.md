@@ -15,11 +15,11 @@ Download external packages with the `elm-package install` command.
 
 ### View Web App
 
-You can view the web app by completing the following steps
+View the web app by completing the following steps
 1. compile the main module and
-2. navigate to the web app in your browser.
+2. navigate to the web app in a web browser.
 
-You can compile the main module by running the following command
+We can compile the main module by running the following command
 
 ```
 elm-make src/Main.elm --output=public/elm.js
