@@ -1,0 +1,89 @@
+/* Style sheet for torus puzzle with 4 rows and columns and tile side lengths of
+100 pixels. */
+
+#torus-puzzle {
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* styles for tiles */
+
+#grid {
+  float: left;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 98px;
+  height: 98px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  background-image: url(gabe.jpg);
+  cursor: default;
+}
+
+/* styles for cycle panels */
+
+.cycle-panel button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.cycle-panel button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.cycle-panel button:focus {
+  outline-style: none;
+}
+
+.cycle-panel.horizontial button {
+  margin-right: 70px;
+}
+
+.cycle-panel.vertical button {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.cycle-panel.horizontial {
+  width: 460px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 65px;
+}
+
+.cycle-panel.vertical {
+  float: left;
+  width: 30px;
+  height: 400px;
+}
+
+.cycle-panel.vertical + .cycle-panel.horizontial {
+  clear: left;
+}
+
+/* styles for shuffle button */
+
+#shuffle-button {
+  font-family: "Century Gothic", "Helvetica", sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2px;
+}
+
+#shuffle-button:hover {
+  cursor: pointer;
+}
