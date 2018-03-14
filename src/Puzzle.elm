@@ -1,5 +1,7 @@
 module Puzzle exposing (..)
 
+{-| TODO document -}
+
 import List.Extra
 
 type alias Puzzle =
