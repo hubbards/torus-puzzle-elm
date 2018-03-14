@@ -1,5 +1,8 @@
 module Main exposing (main)
 
+{-| This is a web app for a torus puzzle. It is also an example of using the Elm
+architecture to implement a web app. -}
+
 import Html
 import Html.Attributes
 import Html.Events
@@ -7,7 +10,6 @@ import Random
 
 import Puzzle
 
-{-| Torus puzzle. -}
 main : Program Never Model Msg
 main =
   Html.program
