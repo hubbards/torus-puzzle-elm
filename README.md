@@ -25,7 +25,7 @@ We can compile the main module by running the following command
 elm-make src/Main.elm --output=public/elm.js
 ```
 
-### Puzzle
+### Solve Puzzle
 
 When the web app is initially loaded, all of the puzzle pieces will be in the
 completed position. The picture used for this puzzle is of my dog, Gabriel.
