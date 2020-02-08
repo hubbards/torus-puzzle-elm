@@ -7,11 +7,7 @@ Torus puzzle web app in [Elm][elm]
 We will assume that this project exists locally and we are logged into a shell
 where the root of the project is the working directory.
 
-We will also assume that [Elm][elm] is installed.
-
-### Install External Dependencies
-
-Download external packages with the `elm-package install` command.
+We will also assume that [Elm][elm] version 0.19.1 is installed.
 
 ### View Web App
 
@@ -21,9 +17,7 @@ View the web app by completing the following steps
 
 We can compile the main module by running the following command
 
-```
-elm-make src/Main.elm --output=public/elm.js
-```
+    > elm make src/Main.elm --output=app/main.js
 
 ### Solve Puzzle
 
@@ -38,5 +32,6 @@ buttons (&#x25b2;, &#x25b6;, &#x25bc;, &#x25c0;). The puzzle may look like
 a square but it is actually a torus!
 
 [elm]: http://elm-lang.org/
-[test]: https://github.com/elm-community/elm-test
-[git]: https://git-scm.com/
+[format]: https://github.com/avh4/elm-format
+[test]: https://github.com/elm-explorations/test
+[index]: app/index.html
