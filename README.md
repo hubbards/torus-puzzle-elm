@@ -13,7 +13,7 @@ We will also assume that [Elm][elm] version 0.19.1 is installed.
 
 View the web app by completing the following steps
 1. compile the main module and
-2. navigate to the web app in a web browser.
+2. navigate to the [web app][app] in a web browser.
 
 We can compile the main module by running the following command
 
@@ -31,7 +31,8 @@ The rows and columns of the puzzle can be cycled by clicking on the arrow
 buttons (&#x25b2;, &#x25b6;, &#x25bc;, &#x25c0;). The puzzle may look like
 a square but it is actually a torus!
 
+[brew]: https://brew.sh/
 [elm]: http://elm-lang.org/
 [format]: https://github.com/avh4/elm-format
 [test]: https://github.com/elm-explorations/test
-[index]: app/index.html
+[app]: app/index.html
