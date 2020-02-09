@@ -10,7 +10,6 @@ import Html.Attributes
 import Html.Events
 import Puzzle
 import Random
-import String
 
 
 main : Program () Model Msg
