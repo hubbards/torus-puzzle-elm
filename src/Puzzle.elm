@@ -1,4 +1,12 @@
-module Puzzle exposing (..)
+module Puzzle exposing
+    ( Cycle
+    , Dir(..)
+    , Grid
+    , Puzzle
+    , Tile
+    , cycle
+    , make
+    )
 
 {-| TODO document
 -}
@@ -6,7 +14,7 @@ module Puzzle exposing (..)
 import List.Extra
 
 
-{-| Record for a puzzle consisting of a rectangular grid of tiles
+{-| Record for puzzles. A puzzle consists of a rectangular grid of tiles.
 -}
 type alias Puzzle =
     { numRows : Int
@@ -15,21 +23,22 @@ type alias Puzzle =
     }
 
 
-{-| Type alias for a grid of tiles. Each element of the outer list represents a
-row of tiles.
+{-| Type alias for grids of tiles. A grid consists of a list of lists of tiles
+where each element of the outer list represents a row of tiles.
 -}
 type alias Grid =
     List (List Tile)
 
 
-{-| Type alias for a puzzle piece (or tile), identified by a pair of zero-based
-row and column indices.
+{-| Type alias for puzzle pieces (or tiles). A tile is identified by the
+zero-based row and column indices of its completed position in the puzzle.
 -}
 type alias Tile =
     ( Int, Int )
 
 
-{-| Makes a completed puzzle with a given number of rows and columns
+{-| Makes a puzzle with a given number of rows and columns where each tile is
+in the completed position.
 -}
 make : Int -> Int -> Puzzle
 make numRows numCols =
@@ -49,15 +58,16 @@ make numRows numCols =
     }
 
 
-{-| Type synonym for a pair of cardinal direction and row or column index. If
-the direction is `North` or `South`, then the index is considered a column. If
-the direction is `East` or `West`, then the index is considered a row.
+{-| Type synonym for cycles. A cycle is a pair of direction and row or column
+index. If the direction is `North` or `South`, then the index is considered a
+column index. If the direction is `East` or `West`, then the index is considered
+a row index.
 -}
 type alias Cycle =
     ( Dir, Int )
 
 
-{-| Data type for cardinal direction
+{-| Data type for cardinal directions.
 -}
 type Dir
     = North
@@ -67,7 +77,7 @@ type Dir
 
 
 {-| Cycle the tiles of a grid in a given row or column by one unit in a given
-direction
+direction.
 -}
 cycle : Cycle -> Grid -> Grid
 cycle ( dir, i ) =
