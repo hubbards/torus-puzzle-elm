@@ -9,6 +9,11 @@ where the root of the project is the working directory.
 
 We will also assume that [Elm][elm] version 0.19.1 is installed.
 
+### Unit Test
+
+Assuming the [test runner][test] is installed, unit tests are run with the
+`elm-test` command.
+
 ### View Web App
 
 View the web app by completing the following steps
@@ -34,5 +39,5 @@ a square but it is actually a torus!
 [brew]: https://brew.sh/
 [elm]: http://elm-lang.org/
 [format]: https://github.com/avh4/elm-format
-[test]: https://github.com/elm-explorations/test
+[test]: https://www.npmjs.com/package/elm-test
 [app]: app/index.html
