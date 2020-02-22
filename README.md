@@ -4,15 +4,10 @@ Torus puzzle web app in [Elm][elm]
 
 ## Instructions
 
-We will assume that this project exists locally and we are logged into a shell
-where the root of the project is the working directory.
+We will assume this project exists locally and we are logged into a shell where
+the root of the project is the working directory.
 
-We will also assume that [Elm][elm] version 0.19.1 is installed.
-
-### Unit Test
-
-Assuming the [test runner][test] is installed, unit tests are run with the
-`elm-test` command.
+We will also assume [Elm][elm] version 0.19.1 is installed.
 
 ### View Web App
 
@@ -36,8 +31,15 @@ The rows and columns of the puzzle can be cycled by clicking on the arrow
 buttons (&#x25b2;, &#x25b6;, &#x25bc;, &#x25c0;). The puzzle may look like
 a square but it is actually a torus!
 
-[brew]: https://brew.sh/
-[elm]: http://elm-lang.org/
+### Test
+
+We will assume [Node.js][node] and [elm-test][test] are installed. Run the tests
+with `elm-test` command.
+
+[elm]: https://elm-lang.org
 [format]: https://github.com/avh4/elm-format
+
+[node]: https://nodejs.org
 [test]: https://www.npmjs.com/package/elm-test
+
 [app]: app/index.html
