@@ -1,13 +1,27 @@
 module PuzzleTest exposing (suite)
 
+{-| TODO document
+-}
+
 import Expect
 import Puzzle
 import Test
 
 
+{-| Unit test suite for Puzzle module.
+-}
 suite : Test.Test
 suite =
-    Test.describe "Puzzle"
+    Test.describe "Puzzle" [ make ]
+
+
+
+-- TODO add more tests
+
+
+make : Test.Test
+make =
+    Test.describe "make"
         [ Test.test "make 0 0" <|
             \_ ->
                 Expect.all
