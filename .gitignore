@@ -8,9 +8,5 @@ elm-stuff
 # Elm REPL file
 repl-temp-*
 
-# Web application directory
-app
-!app/app.js
-!app/gabe.jpg
-!app/index.html
-!app/style.css
+# Compiled Elm code
+app/main.js
