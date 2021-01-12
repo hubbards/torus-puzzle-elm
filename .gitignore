@@ -1,13 +1,16 @@
-# elm-package generated files
+# .gitignore
+# Project-specific gitignore file.  See gitignore(5) manual for more
+# information.
+
+# Elm package directory
 elm-stuff
 
-# elm-repl generated files
+# Elm REPL file
 repl-temp-*
 
-app/*
+# Web application directory
+app
 !app/app.js
 !app/gabe.jpg
 !app/index.html
 !app/style.css
-
-.DS_Store
